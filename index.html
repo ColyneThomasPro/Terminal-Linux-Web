@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="cli">
+    <div class="flex">
+      <p>Linux rpi 6.1.21-v8+ #1642 SMP PREEMPT Mon Apr 3 17:24:16 BST 2023 aarch64 <br>
+        <br>
+        The programs included with the Debian GNU/Linux system are free software; <br>
+        the exact distribution terms for each program are described in the <br>
+        individual files in /usr/share/doc/*/copyright. <br>
+        <br>
+        Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent <br>
+        permitted by applicable law. <br>
+        Last login: <span id="date"></span><br>
+      </p>
+      <button id="openModal">?</button>
+    </div> 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Commandes Disponibles :</h2>
+        <ul>
+          <li><strong>ls :</strong> Liste les fichiers accessibles.</li>
+          <li><strong>cd [nom-du-fichier] :</strong> Navigue vers le fichier.</li>
+          <li><strong>cat [nom-du-fichier.txt] :</strong> Affiche le contenu du fichier .txt.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
